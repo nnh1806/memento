@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+@keyframes move-twinkle-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 937px;
+    align-items: center;
+    background: url(stars_background1.png) repeat top center;
+    background-size: 1100px 475px;
+    z-index: 1;
+    animation: move-twinkle-back 3170s linear infinite;
+}
+.login-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.login-group-img {
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    display: inline-block;
+    width: 420px;
+    height: 120px;
+    //margin-top: 35px;
+    margin-left: 35px;
+}
+
+.login-img {
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+.welcome-img {
+    width: 1000px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.loginframe-img {
+    width: 600px;
+    margin-left: 130px;
+    margin-top: 25px;
+}
+
+//FORM SIGN UP, SIGN IN, FORGOT PASSWORD
+
+// ANIMATION IN OUT OF FORM
+
+// @keyframes hideJellyAnimation {
+//     0% {
+//         transform: scale(1, 1);
+//     }
+//     50% {
+//         transform: scale(1.02, 0.9);
+//     }
+//     100% {
+//         transform: scale(0, 0);
+//     }
+// }
+
+// @keyframes showJellyAnimation {
+//     0% {
+//         transform: scale(0, 0);
+//     }
+//     50% {
+//         transform: scale(1.02, 0.9);
+//     }
+//     100% {
+//         transform: scale(1, 1);
+//     }
+// }
+
+//CSS FORM
+
+.box-form {
+    margin-left: 1200px;
+    z-index: +2;
+    position: relative;
+}
+
+.form-wrapper-sign-in,
+.form-wrapper-sign-up,
+.form-wrapper-forgot-pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+// .wrapper.activeSignUp .box-form .form-wrapper-sign-in {
+//     animation: hideJellyAnimation 1s ease forwards;
+// }
+// .wrapper.activeSignUp .box-form .form-wrapper-sign-up {
+//     animation: showJellyAnimation 1s ease forwards;
+//     animation-delay: 1s;
+// }
+
+.wrapper .box-form .form-wrapper-sign-up,
+.wrapper .box-form .form-wrapper-forgot-pass {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wrapper.activeSignIn .box-form .form-wrapper-sign-up,
+.wrapper.activeSignIn .box-form .form-wrapper-forgot-pass,
+.wrapper.activeSignUp .box-form .form-wrapper-sign-in,
+.wrapper.activeSignUp .box-form .form-wrapper-forgot-pass,
+.wrapper.activeForgotPass .box-form .form-wrapper-sign-in,
+.wrapper.activeForgotPass .box-form .form-wrapper-sign-up {
+    display: none;
+}
+
+// .wrapper.activeSignIn .box-form .form-wrapper-sign-in {
+//     animation: showJellyAnimation 1s ease forwards;
+//     animation-delay: 1s;
+// }
+// .wrapper.activeSignIn .box-form .form-wrapper-sign-up {
+//     animation: hideJellyAnimation 1s ease forwards;
+// }
+
+// .wrapper.activeForgotPass .box-form .form-wrapper-forgot-pass {
+//     animation: showJellyAnimation 1s ease forwards;
+//     animation-delay: 1s;
+// }
+
+// .wrapper.activeForgotPass .box-form .form-wrapper-sign-in {
+//     animation: hideJellyAnimation 1s ease forwards;
+// }
+
+//LOGO SIGN IN, SIGN UP
+
+.sign-in__title,
+.sign-up__title,
+.forgot-pass__title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 37px;
+}
+
+//CSS CÁC THÀNH PHẦN TRONG SIGN IN, SIGN UP
+
+.form-wrapper-sign-in .input-box {
+    margin-top: 15px;
+}
+.input-box {
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+    border-bottom: 2px solid #ffffff;
+}
+.password-box {
+    display: flex;
+    flex-direction: row;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.password-box,
+.input-box input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    font-size: 16px;
+    color: rgb(250, 240, 228, 0.7);
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+}
+
+.forgot-pass {
+    margin: -15px 0 15px 5px;
+}
+
+.button-back {
+    padding-left: 90px;
+    margin-top: 10px;
+}
+.forgot-pass a,
+.button-back a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forgot-pass a:hover,
+.button-back a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #444;
+    font-weight: 713;
+}
+
+.sign-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.sign-link p {
+    color: #ffffff;
+}
+
+.sign-link p a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sign-link p a:hover {
+    text-decoration: underline;
+}
+
+.social-platform {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin: 15px 6px 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+    background: #ffffff;
+}
+
+.social-icons a i {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 35px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover i {
+    color: #444;
+}

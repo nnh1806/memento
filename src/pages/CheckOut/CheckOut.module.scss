@@ -1,0 +1,286 @@
+.checkout {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #f3f5fb;
+    width: var(--default-layout-wrapper-width);
+    align-items: flex-start;
+}
+
+.checkout h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.checkout-info {
+    width: 1350px;
+}
+
+.checkout label {
+    font-size: var(--default-fontsize);
+}
+
+.shipping-info,
+.payment-info {
+    background-color: white;
+    margin: 50px 50px 50px 100px;
+    padding-left: 80px;
+}
+
+// SHIPPING INFORMATION
+
+.shipping-info__name-tel,
+.shipping-info__add-district,
+.shipping-info__city-zipcode-country {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.checkout-info input {
+    border: 1px solid rgba(160, 150, 150, 0.5);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 60px;
+    font-size: var(--default-fontsize);
+    padding: 0px 10px;
+}
+
+.fullname-input,
+.address-input {
+    width: 700px;
+}
+
+.phone-input,
+.info-phone label,
+.district-input,
+.info-district label,
+.country-input,
+.info-country label {
+    width: 250px;
+    margin-left: 50px;
+}
+.zipcode-input,
+.info-zipcode label {
+    width: 200px;
+    margin-left: 50px;
+}
+
+.city-input {
+    width: 450px;
+}
+
+.info-name,
+.info-phone,
+.info-address,
+.info-district,
+.info-city,
+.info-zipcode,
+.info-country {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+//ORDER SUMMARY
+
+.payment-info {
+    padding-bottom: 10px;
+}
+
+.payment-invoice {
+    display: flex;
+    flex-direction: column;
+    border: 20px solid white;
+    background-color: white;
+    width: 500px;
+    margin: 50px 100px 0px 0px;
+}
+
+.order-summary {
+    border-collapse: collapse;
+}
+
+.order-summary td {
+    padding-bottom: 20px;
+}
+
+.payment__book-icon {
+    width: 75px;
+    height: 100px;
+    margin-left: 30px;
+    border: 1px solid palevioletred;
+}
+
+.subtotal-amount,
+.order-summary-amount-subtotal {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.order-summary-subtotal {
+    padding-left: 10px;
+}
+
+//PROMOCODE INPUT
+
+.promocode {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 500px;
+    border: 20px solid white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.promocode-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    width: 380px;
+    border: 1px solid palevioletred;
+    border-radius: 15px;
+}
+
+.promocode-box div {
+    color: rgba(216, 112, 147, 0.651);
+    margin-right: 10px;
+}
+.promocode-box input {
+    font-size: 17px;
+    width: 280px;
+    outline-color: transparent;
+}
+
+.apply-btn {
+    border: 1px solid palevioletred;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(219, 171, 187);
+}
+
+// INVOICE
+
+.total-invoice {
+    border-collapse: collapse;
+    background-color: white;
+    border: 20px solid white;
+    width: 500px;
+    margin: 50px 100px 0px 0px;
+}
+
+.total-invoice-item,
+.total-invoice-amount {
+    padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.total-invoice-amount,
+.total-invoice-amount-total {
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.order-summary-subtotal,
+.order-summary-amount-subtotal,
+.total-invoice-total,
+.total-invoice-amount-total {
+    padding-top: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+    border-top: 2px solid rgba(194, 115, 115, 0.473);
+}
+
+//CHECK OUT BUTTON
+
+.check-out-btn {
+    border: 1px solid palevioletred;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: rgb(219, 171, 187);
+    width: 500px;
+    height: 80px;
+    text-align: center;
+}
+
+.check-out-btn a {
+    text-decoration: none;
+    font-size: 25px;
+    padding-top: 25px;
+    color: black;
+    width: 400px;
+    height: 80px;
+    appearance: button;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+}
+
+//PAYMENT INFORMATION
+.payment-method {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.payment-method input {
+    margin: 0px 0px;
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.creditcard-title {
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.creditcard-info.unactive {
+    display: none;
+}
+
+.creditcard-info__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.creditcard-info label {
+    margin-right: 20px;
+}
+
+.creditcard-info__card-number,
+.creditcard-info__name-card,
+.creditcard-info__date,
+.creditcard-info__cvc {
+    display: flex;
+    flex-direction: column;
+}
+
+.creditcard-info__card-number-input {
+    width: 350px;
+    margin-right: 50px;
+}
+
+.creditcard-info__name-card-input {
+    width: 600px;
+}
+
+.creditcard-info__date-input {
+    width: 210px;
+    margin-right: 190px;
+}
+
+.creditcard-info__cvc-input {
+    width: 90px;
+}

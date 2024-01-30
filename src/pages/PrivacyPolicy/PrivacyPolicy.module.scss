@@ -1,0 +1,48 @@
+.privacypolicy {
+    width: var(--default-layout-wrapper-width);
+    text-align: justify;
+    text-indent: 3rem;
+    line-height: 1.7;
+    color: #f3dbc9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.privacypolicy--blacktheme {
+    width: 1500px;
+    font-size: var(--default-fontsize);
+    color: brown;
+    text-align: justify;
+    line-height: 1.7;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading,
+.content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.heading {
+    font-size: var(--default-fontsize-h1);
+}
+
+.content h2 {
+    margin-top: 20px;
+    font-size: var(--default-fontsize-h2);
+}
+
+.content p {
+    padding: 1rem;
+    width: 1600px;
+}
+
+.content li {
+    padding: 0.5rem;
+    width: 1600px;
+}

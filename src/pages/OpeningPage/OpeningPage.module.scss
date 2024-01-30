@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.content {
+    line-height: 0%;
+    color: #f9e4e0;
+}
+
+.memento_open {
+    width: 420px;
+    height: 120px;
+    margin-top: 2rem;
+    margin-right: 85rem;
+}
+
+.memento_para {
+    margin-left: 950px;
+    z-index: +2;
+}
+
+.start_img {
+    display: flex;
+    flex-direction: row;
+}
+
+.family_img {
+    margin-left: 30px;
+    margin-top: 60px;
+    width: 550px;
+}
+.star_img {
+    margin-left: 317px;
+    width: 718px;
+}
+.started_btn {
+    position: relative;
+    display: flex;
+}
+.btn_background {
+    position: absolute;
+    width: 400px;
+    margin-right: 1035px;
+}
+
+.btn {
+    width: 300px;
+    margin-right: 1035px;
+    margin-top: 10px;
+    z-index: +2;
+}
+
+.ourmessages,
+.htwork {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.messtitle {
+    margin-top: 173px;
+    width: 450px;
+}
+
+.htwork_title {
+    margin-top: 173px;
+    width: 650px;
+}
+.linetext,
+.linetext2 {
+    width: 500px;
+}
+
+.letter {
+    width: 1200px;
+    padding-bottom: 100px;
+}
+
+.htwork_img {
+    width: 1500px;
+    padding-bottom: 200px;
+}

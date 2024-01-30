@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.wrapper {
+    width: var(--default-layout-wrapper-width);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+// Navigation Pane
+
+.tab-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.tab-box::after {
+    content: '';
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: rgba(194, 115, 115, 0.1);
+    width: 1700px;
+    height: 3px;
+    position: absolute;
+    top: 68px;
+}
+
+.line {
+    top: 67.8px;
+    position: absolute;
+    border-radius: 15px;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #c30000;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.titleActive.title1 ~ .line {
+    width: 340px;
+    margin-left: -1360px;
+}
+
+.titleActive.title2 ~ .line {
+    width: 340px;
+    margin-left: -680px;
+}
+
+.titleActive.title3 ~ .line {
+    width: 340px;
+    margin-left: 0px;
+}
+
+.titleActive.title4 ~ .line {
+    width: 340px;
+    margin-left: 680px;
+}
+
+.titleActive.title5 ~ .line {
+    width: 340px;
+    margin-left: 1360px;
+}
+
+.titleActive {
+    width: 340px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 16px 50px 11px 50px;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #c30000;
+    cursor: pointer;
+    transition: width 1s ease;
+}
+
+.title-tab-content {
+    width: 340px;
+    border: none;
+    padding: 16px 50px 11px 50px;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: pointer;
+    color: rgba(194, 115, 115, 0.6);
+    opacity: 0.6;
+}
+
+.title-tab-content:hover {
+    opacity: 1;
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+.tab-content {
+    padding: 50px 90px;
+    display: none;
+}
+
+.show-tab-content {
+    padding: 50px 90px;
+    width: 100%;
+}
+
+//HOW TO WORK
+
+.htwork {
+    margin: 50px 0px;
+}
+
+.htwork img {
+    width: 1700px;
+}
+
+.line-point {
+    display: flex;
+    flex-direction: row;
+}
+
+.line-htw {
+    width: 1700px;
+    margin-top: 150px;
+    height: 3px;
+    background-color: #c30000;
+}
+
+.point1,
+.point2,
+.point3,
+.point4,
+.point5,
+.point6,
+.point7 {
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 146px;
+    //rotate: 135deg;
+    width: 10px;
+    height: 10px;
+    background-color: #c30000;
+    z-index: +1;
+}
+
+.point1 {
+    margin-right: 1330px;
+}
+
+.point2 {
+    margin-right: 820px;
+}
+
+.point3 {
+    margin-right: 483px;
+}
+
+.point4 {
+    margin-right: 160px;
+}
+
+.point5 {
+    margin-left: 317px;
+}
+
+.point6 {
+    margin-left: 790px;
+}
+
+.point7 {
+    margin-left: 1320px;
+}
+
+.line-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.line-content1,
+.line-content2,
+.line-content3,
+.line-content4,
+.line-content5,
+.line-content6,
+.line-content7 {
+    font-size: 17px;
+    color: #c30000;
+    text-align: center;
+    z-index: 2;
+}
+.line-content1 {
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.line-content2 {
+    width: 180px;
+    margin-top: -135px;
+    margin-left: 60px;
+}
+
+.line-content3 {
+    width: 160px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.line-content4 {
+    width: 100px;
+    margin-top: -85px;
+    margin-left: 30px;
+}
+
+.line-content5 {
+    width: 280px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.line-content6 {
+    width: 50px;
+    margin-top: -59px;
+    margin-left: 75px;
+}
+
+.line-content7 {
+    width: 240px;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+//OUR MESSAGES
+
+.our-message p {
+    position: absolute;
+    width: 1220px;
+    text-align: justify;
+    margin-left: 220px;
+    z-index: +1;
+    text-indent: 50px;
+}
+
+.para1-mess {
+    margin-top: 160px;
+}
+
+.para2-mess {
+    margin-top: 220px;
+}
+
+.para3-mess {
+    margin-top: 280px;
+}
+
+.para4-mess {
+    margin-top: 450px;
+}
+
+.para5-mess {
+    margin-top: 580px;
+}
+
+.para6-mess {
+    position: absolute;
+    text-align: center;
+    font-size: var(--default-fontsize-h2);
+    z-index: +1;
+    margin-top: 670px;
+    padding-left: 900px;
+}
+
+//OUR STORY
+
+.background {
+    position: relative;
+}
+
+.background img {
+    width: 1650px;
+    height: 900px;
+}

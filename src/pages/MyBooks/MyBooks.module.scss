@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.mybook {
+    width: var(--default-layout-wrapper-width);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.booklist {
+    text-align: center;
+}
+
+.add {
+    width: 80px;
+    height: 80px;
+}
+
+.add-title {
+    font-size: var(--default-fontsize);
+}
+
+.bookshelf-list {
+    background-color: rgba(68, 28, 4, 0.8);
+    width: 1550px;
+    height: 28px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 20px;
+}
+
+.bookshelf-list::after {
+    content: '';
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #3f230e;
+    width: 1550px;
+    height: 6px;
+    position: absolute;
+    top: 416px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 176.5px;
+}
+
+.list,
+.add-book {
+    height: 230px;
+    // border: 3px solid black;
+    margin-top: 100px;
+}
+
+.book {
+    margin: 10px 30px;
+    height: 180px;
+    width: 150px;
+    border: 3px solid black;
+}
+
+.namebook {
+    font-size: var(--default-fontsize);
+    text-align: start;
+    margin: 10px 70px;
+}
+.create,
+.qrcode,
+.preview,
+.edit,
+.duplicate,
+.delete {
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.addcart {
+    width: 80px;
+    height: 80px;
+    margin-top: 45px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.title-button {
+    font-size: 12px;
+}
+
+.pane-button th,
+.title-button td {
+    width: 180px;
+}

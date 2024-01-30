@@ -1,0 +1,59 @@
+.our-story {
+    width: var(--default-layout-wrapper-width);
+    text-align: justify;
+    text-indent: 3rem;
+    line-height: 1.7;
+    color: #f3dbc9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-story h1 {
+    font-size: var(--default-fontsize-h1);
+}
+
+.our-story h2 {
+    font-size: var(--default-fontsize-h2);
+    margin-bottom: 20px;
+}
+
+.our-story p {
+    padding: 1rem;
+    width: 1600px;
+}
+
+// Our Story trong Home
+
+.our-story--blacktheme p {
+    position: absolute;
+    width: 1280px;
+    text-align: justify;
+    color: black;
+    margin-left: 190px;
+    text-indent: 50px;
+    z-index: 1;
+}
+
+.our-story--blacktheme h1,
+.our-story--blacktheme .our-story--quote {
+    font-size: 0;
+}
+
+.our-story--blacktheme .para1-story {
+    margin-top: 120px;
+}
+
+.our-story--blacktheme .para2-story {
+    margin-top: 450px;
+}
+
+.our-story--blacktheme h2 {
+    position: absolute;
+    text-align: center;
+    font-size: var(--default-fontsize-h2);
+    z-index: +1;
+    margin-top: 720px;
+    margin-left: 300px;
+}

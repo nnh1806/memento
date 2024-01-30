@@ -1,0 +1,117 @@
+.cart {
+    width: var(--default-layout-wrapper-width);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+//Giỏ hàng
+
+.cart__detail {
+    border-collapse: collapse;
+    margin: 20px 100px;
+    border-bottom: 2px solid rgba(194, 115, 115, 0.473);
+}
+.cart__detail th {
+    border-bottom: 2px solid rgba(194, 115, 115, 0.473);
+}
+
+.cart__detail tr {
+    width: var(--default-layout-wrapper-width);
+}
+
+.cart__detail td {
+    padding: 20px 20px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.cart__detail-book {
+    width: 300px;
+}
+.cart__detail-functionBtn {
+    width: 230px;
+}
+
+.cart__detail-quantity {
+    width: 200px;
+}
+
+.cart__detail-price,
+.cart__total-price {
+    width: 280px;
+}
+.cart__book-icon {
+    width: 150px;
+    height: 200px;
+    margin-left: 30px;
+    border: 1px solid palevioletred;
+}
+
+.cart__functionBtn--edit {
+    margin-left: 50px;
+}
+
+.cart__detail-price,
+.cart__total-price {
+    text-align: center;
+}
+
+.cart__functionBtn--preview,
+.cart__functionBtn--edit,
+.cart__functionBtn--delete {
+    cursor: pointer;
+    width: 40px;
+}
+
+//cart subtotal
+
+.cart__payment {
+    margin-left: 1250px;
+    text-align: left;
+}
+
+.cart__subtotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 400px;
+}
+
+.cart__subtotal-title {
+    padding-left: 10px;
+    width: 130px;
+}
+.cart__subtotal-number {
+    font-size: 30px;
+    font-weight: 600;
+    width: 270px;
+    padding-right: 5px;
+    text-align: end;
+}
+
+//Check out button
+
+.check-out-btn {
+    border: 1px solid palevioletred;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: rgb(219, 171, 187);
+    width: 400px;
+    height: 80px;
+    text-align: center;
+}
+
+.check-out-btn a {
+    text-decoration: none;
+    font-size: 25px;
+    padding-top: 25px;
+    color: black;
+    width: 400px;
+    height: 80px;
+    appearance: button;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+}

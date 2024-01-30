@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+@keyframes move-twinkle-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(stars_background1.png) repeat top center;
+    background-size: 1100px 475px;
+    z-index: 1;
+    animation: move-twinkle-back 3170s linear infinite;
+}
+
+.memento_open {
+    margin-top: 2rem;
+    margin-right: 85rem;
+}
+
+.memento_open img {
+    width: 420px;
+    height: 120px;
+}
+
+.content {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: var(--default-layout-wrapper-width);
+}
+
+//FOOTER
+
+.footer {
+    width: var(--default-layout-wrapper-width);
+    position: sticky;
+}
+
+.bgfooter {
+    display: block;
+    line-height: 0px;
+    font-size: 0px;
+}
+
+.bgfooter img {
+    width: 100%;
+}
+
+.footerinfor {
+    width: 100%;
+    background: #c9cae6;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.footerinfor ul h2 {
+    font-size: 30px;
+}
+
+.support,
+.aboutus {
+    line-height: normal;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 110px;
+    margin-right: 150px;
+    list-style-type: none;
+}
+
+.support li a,
+.aboutus li a {
+    text-decoration: none;
+    line-height: normal;
+    font-size: 18px;
+}
+
+.logofooter {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 27px;
+    width: 150px;
+    height: 120px;
+    line-height: normal;
+}
+
+.social {
+    margin-top: 50px;
+    line-height: normal;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.tiktok,
+.pinterest {
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-right: 35px;
+    font-size: 30px;
+}
+
+.youtube {
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-right: 50px;
+    font-size: 30px;
+}
+.copyright {
+    font-size: 12px;
+}
+
+.facebook a {
+    color: #3b5998;
+}
+.twitter a {
+    color: #1da1f2;
+}
+.instagram a {
+    color: #cd486b;
+}
+.tiktok a {
+    color: #000000;
+}
+.pinterest a {
+    color: #bd081c;
+}
+.youtube a {
+    color: #ff0000;
+}
